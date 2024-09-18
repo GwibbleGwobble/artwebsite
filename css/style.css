@@ -10,49 +10,62 @@ body {
 #container{
 	border-left: 5px solid black;
   	border-right: 5px solid black;
+    background-color: #0F3B6C;
 }
 nav {
   width: 98.6vw;
   height: 45px;
-  background-color: Darkred;
+  background-color:rgba(0,0,0,0.5);
   margin: 0 auto;
   border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+header{
+  width: 98.6vw;
+  height: 373px;
+  background-image: url(../images/header.png);
+  text-align: center;
+  font-size: 57px;
+  text-shadow: 2px 2px black, -2px 2px black, 2px -2px black, -2px -2px black;
 }
 #main {
   width: 1200px;
-  height: 680px;
-  background-color: lightyellow;
+  height: 780px;
+  background-color: white;
   margin: 0 auto;
   text-align: center;
-  padding: 30px;
+  padding: 24px 200px;
   border-left: 5px solid black;
   border-right: 5px solid black;
+  box-sizing: border-box;
 }
 #sub {
-  width: 95.45vw;
-  height: 25px;
-  background-color: pink;
+  width: 1900px;
+  height: 90px;
+  background-color: white;
   margin: 0 auto;
   text-align: center;
-  padding: 30px;
+  padding: 0px 300px;
+  box-sizing: border-box;
   border-bottom: 5px solid black;
   border-top: 5px solid black;
 }
 footer{
-  width: 95.45vw;
-  height: 10px;
-  background-color: pink;
+  width: 1490px;
+  height: 50px;
+  background-color: white;
   margin: 0 auto;
   text-align: center;
-  padding: 30px;
+  padding: 10px 200px;
   border-bottom: 5px solid black;
   border-top: 5px solid black;
   border-left: 5px solid black;
   border-right: 5px solid black;
+  box-align: border-box;
 }
 #menuToggle
 {
-  display: black;
+  display: block;
   position: relative;
   top: 10px;
   left: 10px;
@@ -66,12 +79,11 @@ footer{
   text-decoration: none;
   color: white;
   transition: color 0.3s ease;
-  opacity: 100;
 }
 
 #menuToggle a:hover
 {
-  color: tomato;
+  color: darkgray;
 }
 
 
@@ -147,12 +159,24 @@ footer{
 
 #menu li
 {
-  : 30px;
   padding: 10px 0;
   font-size: 30px;
-  opacity: 100;
 }
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+h1{
+  color: whitesmoke;
+}
+h2{
+  font-size: 20px;
+}
+p{
+  font-size: 20px;
+}
+.logo{
+  position: relative;
+   top: -30px;
+   right: -865px;
 }
